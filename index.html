@@ -21,14 +21,22 @@
         <!-- <h1>Rum-tid-diagram</h1> -->
         
         <canvas id="diagram"></canvas>
+        <div id="container">
+            <button id="addObjectBtn">Add Object</button>
+            <div id="objectsContainer"></div>
+        </div>
         <div class="slidecontainer">
             <input type="range" min="0" max="1" value="0" step="0.01" id="uSlider">
             <p>u = <span id="u"></span>c</p>
+
+            <input type="range" min="0" max="1" value="0" step="0.01" id="tSlider">
+            <p>t = <span id="t"></span></p>
+
+            <span id="LMovingText"></span>
+            <input type="number" value=1 id="LpInput">
+            <p> L is moving <input type="checkbox" id="LMovingCheck"> </p>
         </div>
-        <div>
-            <p>L = <input type="text" value=1 id="LInput">m</p>
-        </div>
-        <script src="rumtid.js"></script>
+        <script type="module" src="rumtid.js"></script>
         
         <!-- <script src="rumtid.js" async defer></script> -->
     </body>
