@@ -99,7 +99,7 @@ window.onload = function() {
 
 
 function draw_diagram() {
-    print("Data" + objectsData)
+    console.log("Data" + objectsData)
     diagram = document.getElementById("diagram");
     diagram.width = diagramWidth;
     diagram.height = diagramHeight;
@@ -220,8 +220,6 @@ function draw_diagram() {
     // var x_p_1 = Lp + u*t_p_0
     // var t_0 = t
     // var t_1 = invlorentzt(t_p_1, u, x_p_1)
-    // print("x0: " + x_0)
-    // print("x1: " + x_1)
     // S
     // line(context,
     //     origoX + invlorentzx(0, u, t) * unitSize,
