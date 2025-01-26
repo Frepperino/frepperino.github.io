@@ -10,10 +10,10 @@ let u = 0.2;
 let maxObjects = 4;
 
 let colors = [
-    "#ffff00",
+    //"#ffff00",
     "#0000ff",
     "#00ff00",
-    //"#ff0000",
+    "#ff0000",
 ]
 
 let perspectiveWidth = 500;
