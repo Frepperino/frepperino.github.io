@@ -94,7 +94,7 @@ addObjectBtn.addEventListener("click", function () {
                 <input type="number" id="x_t0${objId}" name="x_t0${objId}" required>
             </div>
             <div id="time-row">
-                <label for="time">T_${objId} = </label>
+                <label for="time">t_${objId} = </label>
                 <input type="number" id="t${objId}" name="time" step="0.01" required>
                 <div id="playback-ro">
                 <button id="restartButton${objId}">
