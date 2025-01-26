@@ -1,26 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+html {
+  font-size: 10px;
+  /* Adjust this value as needed */
+}
+
 body {
   text-align: center;
+  background-color: rgb(245, 245, 245);
+  font-family: 'Inter', sans-serif;
+}
+
+#diagrams-row {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 10px;
+
+}
+
+
+#perspective-column {
+  min-height: 100%;
+  width: 600px;
+  min-width: 600px;
+  flex-direction: column;
+
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px;
 }
 
 #diagram {
-  background-color: beige;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px;
 }
 
-#perspective {
-  background-color: beige;
+#perspective,
+.perspective {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+
+}
+
+.prop-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Aligns input and label vertically */
+  gap: 10px;
+  /* Adds space between the label and input */
 }
 
 #container {
-  max-width: 600px;
-  margin: 20px auto;
-  padding: 20px;
-  border: 1px solid #ccc;
+  background-color: white;
+  max-width: 350px;
+  min-width: 400px;
+  margin: 10px;
+  padding: 10px;
   border-radius: 5px;
+
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+
+
+#time-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#playback-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+#playButton,
+#restartButton {
+  cursor: pointer;
+  padding: 1px;
+}
+
+.icon {
+  width: 14px;
+  height: 14px;
+  fill: #000;
+  transition: fill 0.3s;
+}
+
+#playButton:hover .play-icon {
+  fill: #007BFF;
+}
+
+#timestuff {
+  background-color: white;
+  max-width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+}
+
+
+
 
 #addObjectBtn {
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 10px;
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -29,8 +128,24 @@ body {
   margin-bottom: 20px;
 }
 
+#objectnamerow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
 .object {
-  margin-bottom: 10px;
+  background-color: white;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 10px;
+  min-width: 300px;
+  min-height: 160px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+
 }
 
 .object label {
@@ -40,19 +155,29 @@ body {
 
 .object input {
   width: 100px;
-  padding: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  margin: 5px;
 }
 
 .object .removeBtn {
   padding: 5px 10px;
-  font-size: 14px;
+  font-size: 10px;
   background-color: #dc3545;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
 }
 
 .slidecontainer {

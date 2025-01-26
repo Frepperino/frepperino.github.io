@@ -1,0 +1,7 @@
+i) få olika perspektiv att funka
+ii) snygga till inputs
+iii) Snygga till time
+iv) alla funktioner?
+v) fixa till storlek på allt
+vii) Signera
+iv) QA
